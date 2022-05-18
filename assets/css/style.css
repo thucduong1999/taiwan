@@ -7,6 +7,10 @@
   font-family: 'MyriadPro';
   src: url('../fonts/MyriadPro/MyriadPro-Regular.otf');
 }
+@font-face {
+  font-family: 'SVN-Regular';
+  src: url('../fonts/SVN/SVN-Arial-Regular.ttf');
+}
 /* Header Footer*/
 * {
   margin: 0;
@@ -46,7 +50,7 @@ body {
   font-size: 16px;
 }
 /* Content */
-.title {
+.main-title {
   text-align: center;
   font-size: 52px;
   color: #242424;
@@ -155,6 +159,61 @@ body {
 }
 #brand .thumb-inner img {
   width: 100%;
+}
+#maps .map {
+  padding: 570px 0;
+  background-color: #aaa;
+}
+#countdown .countdown-inner {
+  position: relative;
+}
+#countdown .countdown-inner img {
+  width: 100%;
+}
+#countdown .countdown-inner .countdown-content {
+  width: calc(100% / 12 * 10);
+  padding: 0 3px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30%;
+  left: 53%;
+  transform: translateX(-50%);
+}
+#countdown .countdown-inner .countdown-content .title,
+#countdown .countdown-inner .countdown-content .subtitle {
+  font-size: 52px;
+  letter-spacing: 5px;
+  line-height: 54px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#countdown .countdown-inner .countdown-content .title {
+  color: #000;
+  font-family: "SVN-Regular";
+}
+#countdown .countdown-inner .countdown-content .subtitle {
+  color: #f43324;
+  font-weight: bold;
+  margin: 32px 0 62px 0;
+}
+#countdown .countdown-inner .countdown-content .countdown-time {
+  display: flex;
+  justify-content: center;
+  color: #484848;
+}
+#countdown .countdown-inner .countdown-content .countdown-time .time {
+  margin: 0 30px;
+}
+#countdown .countdown-inner .countdown-content .countdown-time .num {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+}
+#countdown .countdown-inner .countdown-content .countdown-time span {
+  display: flex;
+  justify-content: center;
+  font-family: "SVN-Regular";
 }
 /* Responsive */
 /*# sourceMappingURL=style.css.map */

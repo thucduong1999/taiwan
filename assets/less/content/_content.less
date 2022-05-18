@@ -1,6 +1,6 @@
 // Product
 
-.title {
+.main-title {
     text-align: center;
     font-size: 52px;
     color: @title-color;
@@ -99,6 +99,64 @@
             overflow: hidden;
             img {
                 width: 100%;
+            }
+        }
+    }
+}
+
+#maps {
+    .map {
+        padding: 570px 0;
+        background-color: #aaa;
+    }
+}
+
+#countdown {
+    .countdown-inner {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .countdown-content {
+            .col(10);
+            position: absolute;
+            top: 30%;
+            left: 53%;
+            transform: translateX(-50%);
+            .title,
+            .subtitle {
+                font-size: 52px;
+                letter-spacing: 5px;
+                line-height: 54px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .title {
+                color: #000;
+                font-family: "SVN-Regular";
+            }
+            .subtitle {
+                color: #f43324;
+                font-weight: bold;
+                margin: 32px 0 62px 0;
+            }
+            .countdown-time {
+                display: flex;
+                justify-content: center;
+                color: @color-countdown;
+                .time {
+                    margin: 0 30px;
+                }
+                .num {
+                    font-size: 80px;
+                    .item-position(center);
+                }
+                span {
+                    .item-position(center);
+                    font-family: "SVN-Regular";
+                }
             }
         }
     }
