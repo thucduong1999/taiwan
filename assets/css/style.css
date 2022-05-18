@@ -46,5 +46,15 @@ body {
   font-size: 16px;
 }
 /* Content */
+#link .youtube {
+  text-align: center;
+}
+#link .youtube .title {
+  color: #ff0000;
+  font-size: 52px;
+}
+#link .youtube .sub-title {
+  font-size: 38px;
+}
 /* Responsive */
 /*# sourceMappingURL=style.css.map */
