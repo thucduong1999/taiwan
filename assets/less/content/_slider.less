@@ -1,0 +1,30 @@
+#product {
+    .title {
+        text-align: center;
+        font-size: 52px;
+        color: @title-color;
+        padding: 90px 0 100px 0;
+    }
+
+    .slider {
+        &-inner {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &-item {
+            width: calc(100%/3);
+            .thumb {
+                position: relative;
+                .thumb-width(100%);
+                &-inner {
+                    height: 100%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
