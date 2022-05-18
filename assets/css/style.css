@@ -177,7 +177,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   top: 30%;
-  left: 53%;
+  left: 50%;
   transform: translateX(-50%);
 }
 #countdown .countdown-inner .countdown-content .title,
