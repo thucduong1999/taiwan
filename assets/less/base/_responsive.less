@@ -89,24 +89,50 @@
 @media all and (max-width: 954px) {
     #product {
         padding-bottom: 185px;
+        .title {
+            padding: 215px 0 70px 0;
+        }
+    }
+    #brand {
+        .title {
+            padding: 97px 0 90px 0;
+        }
     }
     #countdown {
         .countdown-inner {
             .countdown-content {
+                .col(11);
+                top: 25%;
                 .title,
                 .subtitle {
                     font-family: "SVN-Bold";
                     font-weight: bold;
-                    letter-spacing: 3px;
+                    letter-spacing: 1px;
+                    font-size: 48px;
+                }
+                .subtitle {
+                    margin: 10px 0;
+                }
+                .countdown-time {
+                    .time {
+                        margin: 0 25px;
+                    }
+                    .num {
+                        font-size: 64px;
+                    }
                 }
             }
         }
     }
     #maps {
+        .title {
+            padding: 120px 0 90px 0;
+        }
         .maps-inner {
             padding-bottom: 170px;
         }
     }
+
 }
 
 // @media all and (max-width: 768px) {

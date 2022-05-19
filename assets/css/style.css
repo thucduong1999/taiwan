@@ -222,11 +222,37 @@ body {
   #product {
     padding-bottom: 185px;
   }
+  #product .title {
+    padding: 215px 0 70px 0;
+  }
+  #brand .title {
+    padding: 97px 0 90px 0;
+  }
+  #countdown .countdown-inner .countdown-content {
+    width: calc(100% / 12 * 11);
+    padding: 0 3px;
+    margin: 3px 0;
+    box-sizing: border-box;
+    top: 25%;
+  }
   #countdown .countdown-inner .countdown-content .title,
   #countdown .countdown-inner .countdown-content .subtitle {
     font-family: "SVN-Bold";
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 48px;
+  }
+  #countdown .countdown-inner .countdown-content .subtitle {
+    margin: 10px 0;
+  }
+  #countdown .countdown-inner .countdown-content .countdown-time .time {
+    margin: 0 25px;
+  }
+  #countdown .countdown-inner .countdown-content .countdown-time .num {
+    font-size: 64px;
+  }
+  #maps .title {
+    padding: 120px 0 90px 0;
   }
   #maps .maps-inner {
     padding-bottom: 170px;
