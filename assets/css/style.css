@@ -222,6 +222,16 @@ body {
   #product {
     padding-bottom: 185px;
   }
+  #product .slider .slick-arrow {
+    width: 88px;
+    height: 88px;
+  }
+  #product .slider .slick-prev::before {
+    font-size: 48px;
+  }
+  #product .slider .slick-next::before {
+    font-size: 48px;
+  }
   #product .title {
     padding: 215px 0 70px 0;
   }
