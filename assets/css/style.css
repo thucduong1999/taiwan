@@ -225,6 +225,9 @@ body {
   #countdown .countdown-inner .countdown-content .subtitle {
     margin: 22px 0 52px 0;
   }
+  #maps {
+    margin: 0 10px;
+  }
 }
 @media all and (max-width: 1170px) {
   #product .slider .slick-arrow {
@@ -276,6 +279,20 @@ body {
   }
   #countdown .countdown-inner .countdown-content .subtitle {
     margin: 0 0 12px 0;
+  }
+}
+@media all and (max-width: 954px) {
+  #product {
+    padding-bottom: 185px;
+  }
+  #countdown .countdown-inner .countdown-content .title,
+  #countdown .countdown-inner .countdown-content .subtitle {
+    font-family: "SVN-Bold";
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  #maps .maps-inner {
+    padding-bottom: 170px;
   }
 }
 @media all and (max-width: 768px) {
