@@ -87,6 +87,118 @@
 // }
 
 @media all and (max-width: 954px) {
+    #header{
+        .logo{
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: #f7f7f9;
+            padding-bottom: 0px;
+            margin-bottom: -2px;
+            gap: 20%;
+            .logo-img{
+                z-index: 1;
+                width: 15%;
+            }
+            .menu{
+                z-index: 1;
+                display: flex;
+                gap: 74px;
+                font-size: 28px;
+                align-items: flex-start;
+                font-weight: 800;
+            }
+        }
+    };
+
+    #hero {
+        .img-background{
+            position: relative;
+            .hero-img{
+                width: 100%;
+            };
+            .hero-cover{
+                left: 62%;
+                transform: translateX(-44%);
+                top: 11%;
+                font-size: 51px;
+            };
+        };
+        .nav-about{
+            position: unset;
+            width: 100%;
+            padding: 0 115px 70px 126px;
+            justify-content: center;
+        }
+        .about-header{
+            font-size: 50px;
+            line-height: 33px;
+            color: #242424;
+            font-weight: bold;
+            font-family: "S VN";
+            text-align: center;
+            padding-bottom: 33px;
+        }
+        .sub-about{
+            font-size: 28px;
+            letter-spacing: 0px;
+            line-height: 40px;
+            color: #666666;
+            font-family: "Myriad Pro";
+            text-align: left;
+        }
+    };
+    
+    #our-skill{
+        gap:69px;
+        margin-top: 55px;
+        flex-wrap: wrap;
+        .our-content{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 85px;
+            .sub-our-content{
+                width: 100%;
+                display: flex;
+                .our-h2{
+                    font-size: 50px;
+                    font-weight: bold;
+                    font-family: "S VN";
+                    text-align: center;
+                }
+                .our-h3{
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-family: "S VN";
+                    text-align: center;
+                }
+                .our-p{
+                    font-size: 28px;
+                    letter-spacing: 0px;
+                    line-height: 40px;
+                    font-family: "Myriad Pro";
+                    text-align: left;
+                    padding-left: 125px;
+                    padding-right: 113px;
+                }
+                .our-header{
+                    padding-bottom: 116px;
+                    margin-left: 0;
+            };
+        }
+        .our-img{
+            width: 100%;
+            .sub-our-img{
+                width: 100%;
+            }
+        }
+    }};
+    #our-skill .our-img{
+        width: 100%;
+    };
     #product {
         .slider {
             .slick-arrow {
