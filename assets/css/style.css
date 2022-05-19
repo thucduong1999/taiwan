@@ -15,6 +15,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 a {
   color: #000;
@@ -49,18 +52,6 @@ body {
   font-family: 'SVN-Bold';
   font-size: 16px;
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-}
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-  scroll-padding-top: 50px;
-}
 #header .logo {
   top: 0;
   left: 0;
@@ -91,6 +82,14 @@ html {
 #header .logo .menu .contact:hover {
   cursor: pointer;
   color: #f43324;
+}
+#hero .slick-dots {
+  right: -580px;
+  bottom: 400px;
+}
+#hero .slick-dots li button:before {
+  font-size: 14px;
+  opacity: 0.8;
 }
 #hero .img-background {
   position: relative;
@@ -182,115 +181,6 @@ html {
 }
 #our-skill .our-img .sub-our-img {
   width: 100%;
-}
-@media all and (max-width: 954px) {
-  #header .logo {
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #f7f7f9;
-    padding-bottom: 0px;
-    margin-bottom: -2px;
-    gap: 20%;
-  }
-  #header .logo .logo-img {
-    z-index: 1;
-    width: 15%;
-  }
-  #header .logo .menu {
-    z-index: 1;
-    display: flex;
-    gap: 74px;
-    font-size: 28px;
-    align-items: flex-start;
-    font-weight: 800;
-  }
-  #hero .img-background {
-    position: relative;
-  }
-  #hero .img-background .hero-img {
-    width: 100%;
-  }
-  #hero .img-background .hero-cover {
-    left: 62%;
-    transform: translateX(-44%);
-    top: 11%;
-    font-size: 51px;
-  }
-  #hero .nav-about {
-    position: unset;
-    width: 100%;
-    padding: 0 115px 70px 126px;
-    justify-content: center;
-  }
-  #hero .about-header {
-    font-size: 50px;
-    line-height: 33px;
-    color: #242424;
-    font-weight: bold;
-    font-family: "S VN";
-    text-align: center;
-    padding-bottom: 33px;
-  }
-  #hero .sub-about {
-    font-size: 28px;
-    letter-spacing: 0px;
-    line-height: 40px;
-    color: #666666;
-    font-family: "Myriad Pro";
-    text-align: left;
-  }
-  #our-skill {
-    gap: 69px;
-    margin-top: 55px;
-    flex-wrap: wrap;
-  }
-  #our-skill .our-content {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 85px;
-  }
-  #our-skill .our-content .sub-our-content {
-    width: 100%;
-    display: flex;
-  }
-  #our-skill .our-content .sub-our-content .our-h2 {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: "S VN";
-    text-align: center;
-  }
-  #our-skill .our-content .sub-our-content .our-h3 {
-    font-size: 45px;
-    font-weight: bold;
-    font-family: "S VN";
-    text-align: center;
-  }
-  #our-skill .our-content .sub-our-content .our-p {
-    font-size: 28px;
-    letter-spacing: 0px;
-    line-height: 40px;
-    font-family: "Myriad Pro";
-    text-align: left;
-    padding-left: 125px;
-    padding-right: 113px;
-  }
-  #our-skill .our-content .sub-our-content .our-header {
-    padding-bottom: 116px;
-    margin-left: 0;
-  }
-  #our-skill .our-content .our-img {
-    width: 100%;
-  }
-  #our-skill .our-content .our-img .sub-our-img {
-    width: 100%;
-  }
-  #our-skill .our-img {
-    width: 100%;
-  }
 }
 /* Content */
 .main-title {
@@ -462,6 +352,113 @@ html {
 }
 /* Responsive */
 @media all and (max-width: 954px) {
+  #header .logo {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f7f9;
+    padding-bottom: 0px;
+    margin-bottom: -2px;
+    gap: 20%;
+  }
+  #header .logo .logo-img {
+    z-index: 1;
+    width: 15%;
+  }
+  #header .logo .menu {
+    z-index: 1;
+    display: flex;
+    gap: 74px;
+    font-size: 28px;
+    align-items: flex-start;
+    font-weight: 800;
+  }
+  #hero .img-background {
+    position: relative;
+  }
+  #hero .img-background .hero-img {
+    width: 100%;
+  }
+  #hero .img-background .hero-cover {
+    left: 62%;
+    transform: translateX(-44%);
+    top: 11%;
+    font-size: 51px;
+  }
+  #hero .nav-about {
+    position: unset;
+    width: 100%;
+    padding: 0 115px 70px 126px;
+    justify-content: center;
+  }
+  #hero .about-header {
+    font-size: 50px;
+    line-height: 33px;
+    color: #242424;
+    font-weight: bold;
+    font-family: "S VN";
+    text-align: center;
+    padding-bottom: 33px;
+  }
+  #hero .sub-about {
+    font-size: 28px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #666666;
+    font-family: "Myriad Pro";
+    text-align: left;
+  }
+  #our-skill {
+    gap: 69px;
+    margin-top: 55px;
+    flex-wrap: wrap;
+  }
+  #our-skill .our-content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 85px;
+  }
+  #our-skill .our-content .sub-our-content {
+    width: 100%;
+    display: flex;
+  }
+  #our-skill .our-content .sub-our-content .our-h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "S VN";
+    text-align: center;
+  }
+  #our-skill .our-content .sub-our-content .our-h3 {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "S VN";
+    text-align: center;
+  }
+  #our-skill .our-content .sub-our-content .our-p {
+    font-size: 28px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    font-family: "Myriad Pro";
+    text-align: left;
+    padding-left: 125px;
+    padding-right: 113px;
+  }
+  #our-skill .our-content .sub-our-content .our-header {
+    padding-bottom: 116px;
+    margin-left: 0;
+  }
+  #our-skill .our-content .our-img {
+    width: 100%;
+  }
+  #our-skill .our-content .our-img .sub-our-img {
+    width: 100%;
+  }
+  #our-skill .our-img {
+    width: 100%;
+  }
   #product {
     padding-bottom: 185px;
   }

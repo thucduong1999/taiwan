@@ -32,9 +32,25 @@
         </div>
         <div id="hero">
             <div class="img-background">
-                <img src="./assets/img/hero/hero.png" alt="" class="hero-img">
-                <div class="hero-cover">
-                    <h4>Công nghệ cho cuộc sống thăng hạng</h4>                     
+                <div class="slider-hero">
+                    <div class="slider-inner">
+                        <img src="./assets/img/hero/hero.png" alt="" class="hero-img">
+                        <div class="hero-cover">
+                            <h4>Công nghệ cho cuộc sống thăng hạng</h4>                     
+                        </div>
+                    </div>
+                    <div class="slider-inner">
+                        <img src="./assets/img/hero/hero.png" alt="" class="hero-img">
+                        <div class="hero-cover">
+                            <h4>Công nghệ cho cuộc sống thăng hạng</h4>                     
+                        </div>
+                    </div>
+                    <div class="slider-inner">
+                        <img src="./assets/img/hero/hero.png" alt="" class="hero-img">
+                        <div class="hero-cover">
+                            <h4>Công nghệ cho cuộc sống thăng hạng</h4>                     
+                        </div>
+                    </div>
                 </div>
                 <div class="nav-about">
                     <h1 class="about-header">ABOUT ICT COMM</h1>
@@ -222,6 +238,15 @@
             </div>
 
     <script>
+        $('.slider-hero').slick({
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        });
+
+
         $('.slider').slick({
             dots: false,
             slidesToShow: 1,
