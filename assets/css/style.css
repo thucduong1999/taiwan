@@ -225,16 +225,95 @@ body {
 #link .youtube .sub-title {
   font-size: 38px;
 }
-#link .youtube .link-youtube {
-  margin-left: auto;
-  margin-right: auto;
-}
 #link .map {
   text-align: center;
 }
 #link .map .title {
   font-size: 52px;
   background-color: #f7f7f7;
+}
+#footer {
+  font-family: 'MyriadPro';
+  background-color: #f9f9f9;
+}
+#footer .social {
+  background-color: #e32219;
+}
+#footer .social .icon {
+  text-align: center;
+  color: #fff;
+  font-size: 38px;
+  line-height: 70px;
+  padding-top: 10px;
+}
+#footer .social .icon i {
+  padding: 0 15px;
+}
+#footer .footer-container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 60px auto 40px auto;
+  box-sizing: border-box;
+}
+#footer .footer-row {
+  display: flex;
+  flex: wrap;
+  padding: 0 15px;
+}
+#footer .footer-row .row-item {
+  width: calc(100%/6);
+  text-align: center;
+}
+#footer .footer-row .row-item .title {
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+#footer .footer-row .row-item p {
+  opacity: 0.6;
+}
+#footer .form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+#footer .form input {
+  width: 400px;
+  font-size: 19px;
+  line-height: 40px;
+  padding-left: 10px;
+  outline: none;
+}
+#footer .form button {
+  padding: 0 35px;
+  background-color: #e32219;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+#footer .box {
+  max-width: 1630px;
+  width: 100%;
+  border: solid 1px #eb8f8a;
+  margin: auto;
+}
+#footer .organize {
+  text-align: center;
+}
+#footer .organize img {
+  width: 100%;
+}
+#footer .logo {
+  text-align: center;
+}
+#footer .row-item {
+  margin: auto;
+  padding-bottom: 20px;
+}
+#footer .row-item a {
+  padding: 0 5px;
+}
+#footer .recommend {
+  text-align: center;
 }
 /* Responsive */
 @media all and (max-width: 1572px) {
