@@ -8,6 +8,18 @@
     text-transform: uppercase;
 }
 
+.thumb {
+    position: relative;
+    .thumb-width(100%);
+    &-inner {
+        height: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}
+
 #product {
     .slider {
         &-inner {
@@ -91,23 +103,25 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .thumb {
-        position: relative;
-        .thumb-width(100%);
-        &-inner {
-            height: 100%;
-            overflow: hidden;
-            img {
-                width: 100%;
-            }
-        }
-    }
+    // .thumb {
+    //     position: relative;
+    //     .thumb-width(100%);
+    //     &-inner {
+    //         height: 100%;
+    //         overflow: hidden;
+    //         img {
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 }
 
 #maps {
-    .map {
-        padding: 570px 0;
-        background-color: #aaa;
+    .title {
+        padding: 72px 0 60px 0;
+    }
+    .maps-inner {
+        padding-bottom: 75px;
     }
 }
 

@@ -57,6 +57,18 @@ body {
   padding: 90px 0 100px 0;
   text-transform: uppercase;
 }
+.thumb {
+  position: relative;
+  width: 100%;
+  flex: 0 0 100%;
+}
+.thumb-inner {
+  height: 100%;
+  overflow: hidden;
+}
+.thumb-inner img {
+  width: 100%;
+}
 #product .slider-inner .slide-show {
   display: flex;
   flex-wrap: wrap;
@@ -148,21 +160,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-#brand .thumb {
-  position: relative;
-  width: 100%;
-  flex: 0 0 100%;
+#maps .title {
+  padding: 72px 0 60px 0;
 }
-#brand .thumb-inner {
-  height: 100%;
-  overflow: hidden;
-}
-#brand .thumb-inner img {
-  width: 100%;
-}
-#maps .map {
-  padding: 570px 0;
-  background-color: #aaa;
+#maps .maps-inner {
+  padding-bottom: 75px;
 }
 #countdown .countdown-inner {
   position: relative;
