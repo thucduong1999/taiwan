@@ -1,135 +1,29 @@
 #header{
+    background-color: #f7f7f9;
+    padding-top: 60px;
     .logo{
-        top:0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-around;
-        background-color: #f7f7f9;
-        padding-top: 59px;
-        margin-bottom: -102px;
-        gap: 20%;
-        .logo-img{
+        .col(8.5);
+        .flex();
+        margin: 0 auto;
+        img {
             z-index: 1;
-            width: calc(100%/10);
         }
         .menu{
             z-index: 1;
             display: flex;
             gap: 46px;
-            align-items: flex-end;
             font-size: 21px;
-            color: #5c5c5c;
+            a {
+                color: @color-countdown;
+            }
             .home:hover{
-                cursor: pointer;
-                color: #f43324;                
+                color: @color-hover-header;                
             }
             .contact:hover{
-                cursor: pointer;
-                color: #f43324;
+                color: @color-hover-header;
             }
         }
     }
 }
-// Hero
-#hero {
-    .slick-dots {
-        right: -580px;
-        bottom: 400px;
-        li button:before {
-            font-size: 14px;
-            opacity: 0.8;
-        }
-    }
-    .img-background{
-        position: relative;
-        .hero-img{
-            width: 100%;
-        }
-        .slider-inner {
-            position: relative;
-            .hero-cover{
-                position: absolute;
-                left: 58%;
-                top: 18%;
-                transform: translateX(-42%);
-                color: #fffefe;
-                font-size: 114px;
-            };
-        }
 
-        
-    };
-    .nav-about{
-        position: absolute;
-        width: 45%;
-        display: flex;
-        flex-wrap: wrap;
-        left: 55%;
-        bottom: 0;
-    }
-    .about-header{
-        font-size: 42px;
-        color: #f43324;
-        padding-bottom: 25px;
-        margin-left: -30px;
-        letter-spacing: 2px;
-        line-height: 58px;
-    }
-    .sub-about{
-        font-size: 18px;
-        color: #666666;
-        line-height: 28px;
-        font-family: "MyriadPro";
-        text-align: justify;
-    }
-}
-// End Hero
-// our skill
-#our-skill{
-    background-color: #f7f7f9;
-    display: flex;
-    gap:69px;
-    margin-top: 55px;
-    .our-content{
-        width: calc(100%/2);
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 117px;
-        .sub-our-content{
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            .our-h2{
-                color: #f43324;
-                font-size: 42px;
-                letter-spacing: 2px;
-                line-height: 58px;
-            }
-            .our-h3{
-                color: #000000;
-                font-size: 40px;
-                letter-spacing: 2px;
-                line-height: 58px;
-            }
-            .our-p{
-                font-size: 18px;
-                color: #666666;
-                line-height: 28px;
-                font-family: "MyriadPro";
-                text-align: justify;
-            }
-            .our-header{
-                padding-bottom: 71px;
-                margin-left: -100px;
-            }
-        };
-    }
-    .our-img{
-        width: calc(100%/2);
-        .sub-our-img{
-            width: 100%;
-        }
-    }
-}
-// End our skill
+

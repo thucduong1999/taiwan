@@ -1,5 +1,99 @@
-// Product
+// Hero
+#hero {
+    margin-top: -100px;
+    .slick-dots {
+        max-width: 300px;
+        right: 13%;
+        bottom: 35%;
+        transform: translate(0%, 0%);
+        li button:before {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    }
+    .img-background {
+        max-width: 1920px;
+        width: 100%;
+        position: relative;
+        .slider-inner {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .hero-cover {
+                .col(5.1);
+                position: absolute;
+                left: 61%;
+                top: 18%;
+                transform: translate(-43%, -8%);
+                color: @color-white;
+                font-size: 114px;
+            }
+        }
+        .nav-about{
+            position: absolute;
+            .col(5);
+            bottom: -6%;
+            left: 53%;
+            transform: translate(0%, 6%);
+            .about-header{
+                font-size: 42px;
+                color: @color-hover-header;
+                margin-left: -30px;
+                letter-spacing: 2px;
+                padding-bottom: 25px;
+            }
+            .sub-about{
+                font-size: 18px;
+                color: @color-countdown;
+                line-height: 28px;
+                font-family: "MyriadPro";
+                text-align: justify;
+            }
+        }
+    }
+}
+// End Hero
 
+// our skill
+#our-skill {
+    background-color: @color-background;
+    margin-top: 13%;
+    .sub-our {
+        justify-content: flex-end;
+        &-content {
+            .col(3);
+            margin-right: 60px;
+            .our-header {
+                margin: 100px 0 70px -100px;
+                letter-spacing: 2px;
+            }
+            .our-h2{
+                color: @color-hover-header;
+                font-size: 42px;
+            }
+            .our-h3{
+                color: @color-black;
+                font-size: 40px;
+            }
+            .our-p{
+                font-size: 18px;
+                color: @color-countdown;
+                line-height: 28px;
+                font-family: "MyriadPro";
+                text-align: justify;
+            }
+        }
+    }
+    .our-img{
+        .col(6.5);
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// Product
 .main-title {
     text-align: center;
     font-size: 52px;
@@ -29,7 +123,6 @@
             }
         }
         &-item {
-            
             width: calc(100%/3);
             .thumb {
                 position: relative;
@@ -98,23 +191,12 @@
 // Brand
 #brand {
     padding-bottom: 180px;
-    background-color: #f7f7f7;
+    background-color: @color-background;
     .brand-inner {
-        .col(8);
+        .col(7);
         margin-left: auto;
         margin-right: auto;
     }
-    // .thumb {
-    //     position: relative;
-    //     .thumb-width(100%);
-    //     &-inner {
-    //         height: 100%;
-    //         overflow: hidden;
-    //         img {
-    //             width: 100%;
-    //         }
-    //     }
-    // }
 }
 
 #maps {
@@ -149,11 +231,11 @@
                 text-transform: uppercase;
             }
             .title {
-                color: #000;
+                color: @color-black;
                 font-family: "SVN-Regular";
             }
             .subtitle {
-                color: #f43324;
+                color: @color-hover-header;
                 font-weight: bold;
                 margin: 32px 0 62px 0;
             }
@@ -178,23 +260,28 @@
 }
 
 #link {
+    margin-top: 75px;
     .youtube {
         text-align: center;
         .title {
-            color: #ff0000;
+            color: @color-hover-header;
             font-size: 52px;
+            text-transform: uppercase;
         }
         .sub-title {
             font-size: 38px;
         }
         .link-youtube {
+            .col(8);
+            margin: 45px auto 80px auto;
         }
     }
     .map {
         text-align: center;
         .title {
             font-size: 52px;
-            background-color: #f7f7f7;
+            background-color: @color-background;
+            padding: 60px 0 50px 0;
         }
     }
 }

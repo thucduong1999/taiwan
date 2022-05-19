@@ -1,11 +1,11 @@
 #footer {
     font-family: 'MyriadPro';
-    background-color: #f9f9f9;
+    background-color: @color-background;
     .social {
         background-color: #e32219;
         .icon {
             text-align: center;
-            color: #fff;
+            color: @color-white;
             font-size: 38px;
             line-height: 70px;
             padding-top: 10px;
@@ -22,7 +22,7 @@
     }
     .footer-row {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
         padding: 0 15px;
         .row-item {
             width: calc(100%/6);
@@ -49,9 +49,9 @@
         }
         button {
             padding: 0 35px;
-            background-color: #e32219;
+            background-color: @color-hover-header;
             border: none;
-            color: #fff;
+            color: @color-white;
             font-size: 16px;
         }
     }
@@ -79,5 +79,25 @@
     }
     .recommend {
         text-align: center;
+    }
+    .support {
+        position: relative;
+        &-inner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            .box {
+                border-radius: 115px;
+                -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+                border-color: @color-white;
+                background-color: @color-white;
+            }
+        }
+    }
+    .foot {
+        height: 32px;
+        background-color: @color-black;
     }
 }
