@@ -424,15 +424,17 @@ body {
   flex-wrap: wrap;
   padding: 0 15px;
 }
-.footer .footer-row .row-item {
+.footer .footer-row-item {
   width: calc(100%/6);
   text-align: center;
 }
-.footer .footer-row .row-item .title {
+.footer .footer-row-item .title {
   font-size: 20px;
   letter-spacing: 0.01em;
 }
-.footer .footer-row .row-item p {
+.footer .footer-row-item .info a {
+  display: block;
+  font-size: 18px;
   opacity: 0.6;
 }
 .footer .form {
@@ -453,6 +455,9 @@ body {
   border: none;
   color: #fff;
   font-size: 16px;
+}
+.footer .form button:hover {
+  cursor: pointer;
 }
 .footer .box {
   max-width: 1630px;
@@ -495,6 +500,9 @@ body {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
   border-color: #fff;
   background-color: #fff;
+}
+.footer .support-inner:hover {
+  cursor: pointer;
 }
 .footer .foot {
   height: 32px;
@@ -644,8 +652,9 @@ body {
     line-height: 35px;
     padding-top: 7px;
   }
-  .footer .footer-row .row-item {
+  .footer .footer-row-item {
     width: calc(100%/3);
+    padding: 10px 0;
   }
   .footer .logo img {
     width: 50%;
