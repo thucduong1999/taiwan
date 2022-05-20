@@ -92,6 +92,9 @@ body {
 #hero {
   margin-top: -100px;
 }
+#hero .slick-next {
+  right: 0;
+}
 #hero .slick-dots {
   max-width: 300px;
   right: 13%;
@@ -123,7 +126,7 @@ body {
   top: 18%;
   transform: translate(-43%, -8%);
   color: #fff;
-  font-size: 114px;
+  font-size: calc(100vw/16.9);
 }
 #hero .img-background .nav-about {
   position: absolute;
@@ -511,7 +514,7 @@ body {
     padding: 0 3px;
     margin: 3px 0;
     box-sizing: border-box;
-    font-size: 51px;
+    font-size: calc(100vw/18.7);
   }
   #hero .img-background .nav-about {
     position: unset;
