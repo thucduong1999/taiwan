@@ -225,12 +225,22 @@ body {
 #link .youtube .sub-title {
   font-size: 38px;
 }
+#link .youtube iframe {
+  max-width: 1244px;
+  width: 100%;
+  height: 689px;
+}
 #link .map {
   text-align: center;
 }
 #link .map .title {
   font-size: 52px;
   background-color: #f7f7f7;
+}
+#link .map iframe {
+  max-width: 1920px;
+  width: 100%;
+  height: 783px;
 }
 #footer {
   font-family: 'MyriadPro';
@@ -257,7 +267,7 @@ body {
 }
 #footer .footer-row {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   padding: 0 15px;
 }
 #footer .footer-row .row-item {
@@ -305,15 +315,20 @@ body {
 #footer .logo {
   text-align: center;
 }
-#footer .row-item {
+#footer .container .row-item {
   margin: auto;
   padding-bottom: 20px;
 }
-#footer .row-item a {
+#footer .container .row-item a {
   padding: 0 5px;
 }
 #footer .recommend {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#footer .recommend p {
+  padding-bottom: 10px;
 }
 /* Responsive */
 @media all and (max-width: 1572px) {
@@ -346,6 +361,42 @@ body {
   }
   #countdown .countdown-inner .countdown-content .subtitle {
     margin: 12px 0 32px 0;
+  }
+}
+@media all and (max-width: 1080px) {
+  #link .youtube .title {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  #link .youtube .sub-title {
+    font-size: 28px;
+    padding-bottom: 70px;
+  }
+  #link .youtube iframe {
+    max-width: 862px;
+    height: 481px;
+  }
+  #link .map .title {
+    font-size: 50px;
+    padding: 150px 0 70px 0;
+  }
+  #link .map iframe {
+    height: 455px;
+  }
+  #footer .social .icon {
+    font-size: 22px;
+    line-height: 40px;
+    padding-top: 5px;
+  }
+  #footer .footer-row .row-item {
+    width: calc(100%/3);
+    padding-bottom: 30px;
+  }
+  #footer .box {
+    max-width: 960px;
+  }
+  #footer .container .row-item {
+    padding-bottom: 10px;
   }
 }
 @media all and (max-width: 1024px) {

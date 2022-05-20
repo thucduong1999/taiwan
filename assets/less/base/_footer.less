@@ -22,7 +22,7 @@
     }
     .footer-row {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
         padding: 0 15px;
         .row-item {
             width: calc(100%/6);
@@ -70,14 +70,21 @@
     .logo {
         text-align: center;
     }
-    .row-item {
-        margin: auto;
-        padding-bottom: 20px;
-        a {
-            padding: 0 5px;
+    .container {
+        .row-item {
+            margin: auto;
+            padding-bottom: 20px;
+            a {
+                padding: 0 5px;
+            }
         }
     }
     .recommend {
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        p {
+            padding-bottom: 10px;
+        }
     }
 }
