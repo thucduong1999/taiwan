@@ -1,8 +1,9 @@
 // Hero
-#hero {
+.hero {
     margin-top: -100px;
     .slick-next {
         right: 0;
+        display: none !important;
     }
     .slick-dots {
         max-width: 300px;
@@ -30,6 +31,7 @@
                 top: 18%;
                 transform: translate(-43%, -8%);
                 color: @color-white;
+                font-size: calc(100vw/16.9);
             }
         }
         .nav-about{
@@ -58,7 +60,7 @@
 // End Hero
 
 // our skill
-#our-skill {
+.our-skill {
     background-color: @color-background;
     margin-top: 13%;
     .sub-our {
@@ -116,7 +118,7 @@
     }
 }
 
-#product {
+.product {
     .slider {
         &-inner {
             .slide-show {
@@ -191,7 +193,7 @@
 
 
 // Brand
-#brand {
+.brand {
     padding-bottom: 180px;
     background-color: @color-background;
     .brand-inner {
@@ -201,7 +203,7 @@
     }
 }
 
-#maps {
+.maps {
     .title {
         padding: 72px 0 60px 0;
     }
@@ -210,7 +212,7 @@
     }
 }
 
-#countdown {
+.countdown {
     .countdown-inner {
         position: relative;
 
@@ -261,7 +263,7 @@
     }
 }
 
-#link {
+.link {
     margin-top: 75px;
     .youtube {
         text-align: center;
