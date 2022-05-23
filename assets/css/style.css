@@ -63,7 +63,6 @@ body {
 .header .logo {
   width: calc(100% / 12 * 8.5);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -120,7 +119,6 @@ body {
 .hero .img-background .slider-inner .hero-cover {
   width: calc(100% / 12 * 5.1);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   position: absolute;
   left: 61%;
@@ -133,7 +131,6 @@ body {
   position: absolute;
   width: calc(100% / 12 * 5);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   bottom: -6%;
   left: 53%;
@@ -162,7 +159,6 @@ body {
 .our-skill .sub-our-content {
   width: calc(100% / 12 * 3);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   margin-right: 60px;
 }
@@ -187,7 +183,6 @@ body {
 .our-skill .our-img {
   width: calc(100% / 12 * 6.5);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
 }
 .our-skill .our-img img {
@@ -301,7 +296,6 @@ body {
 .brand .brand-inner {
   width: calc(100% / 12 * 7);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -312,7 +306,6 @@ body {
 .maps .maps-inner {
   width: calc(100% / 12 * 10);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: 75px;
@@ -326,7 +319,6 @@ body {
 .countdown .countdown-inner .countdown-content {
   width: calc(100% / 12 * 10);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   position: absolute;
   top: 30%;
@@ -385,7 +377,6 @@ body {
 .link .youtube .link-youtube {
   width: calc(100% / 12 * 8);
   padding: 0 3px;
-  margin: 3px 0;
   box-sizing: border-box;
   margin: 45px auto 80px auto;
 }
@@ -475,9 +466,35 @@ body {
   margin: auto;
 }
 .footer .organize {
-  text-align: center;
+  display: flex;
+  width: calc(100% / 12 * 9);
+  padding: 0 3px;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #2e3133;
+  justify-content: center;
+  padding: 40px 0;
+  margin: 0 auto;
 }
-.footer .organize img {
+.footer .organize .title {
+  padding: 0 10px;
+}
+.footer .organize .organ,
+.footer .organize .organ-inner,
+.footer .organize .img {
+  display: flex;
+  align-items: center;
+}
+.footer .organize .organ {
+  padding: 10px 0;
+}
+.footer .organize .organ .img {
+  padding: 0 10px;
+}
+.footer .organize .img {
+  padding: 0 10px;
+}
+.footer .organize .img img {
   width: 100%;
 }
 .footer .logo {
@@ -527,7 +544,6 @@ body {
   .header .logo {
     width: calc(100% / 12 * 11);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -538,7 +554,6 @@ body {
     font-family: "SFU";
     width: calc(100% / 12 * 5);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     font-size: 72px;
   }
@@ -546,7 +561,6 @@ body {
     position: unset;
     width: calc(100% / 12 * 10);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     margin: 0 auto;
   }
@@ -567,7 +581,6 @@ body {
   .our-skill .sub-our-content {
     width: calc(100% / 12 * 10);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
   }
   .our-skill .sub-our-content .our-header {
@@ -590,7 +603,6 @@ body {
   .our-skill .our-img {
     width: calc(100% / 12 * 12);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
   }
   .product {
@@ -612,10 +624,16 @@ body {
   .brand .title {
     padding: 97px 0 90px 0;
   }
+  .brand .brand-inner {
+    width: calc(100% / 12 * 11);
+    padding: 0 3px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .countdown .countdown-inner .countdown-content {
     width: calc(100% / 12 * 11);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     top: 25%;
   }
@@ -653,7 +671,6 @@ body {
   .link .youtube .link-youtube {
     width: calc(100% / 12 * 10);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     margin: 45px auto 0 auto;
   }
@@ -675,6 +692,22 @@ body {
   .footer .footer-row-item {
     width: calc(100%/3);
     padding: 10px 0;
+  }
+  .footer .organize {
+    width: calc(100% / 12 * 11);
+    padding: 0 3px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  .footer .organize .title {
+    max-width: 125px;
+    width: 100%;
+  }
+  .footer .organize .organ {
+    display: block;
+  }
+  .footer .organize .certi {
+    margin-left: -92px;
   }
   .footer .logo img {
     width: 50%;
@@ -755,14 +788,12 @@ body {
     line-height: 30px;
     width: calc(100% / 12 * 6.3);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     font-size: 25px;
   }
   .hero .img-background .nav-about {
     width: calc(100% / 12 * 9);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     margin: -30px auto 0 auto;
   }
@@ -776,7 +807,6 @@ body {
   .our-skill .sub-our-content {
     width: calc(100% / 12 * 9);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
   }
   .our-skill .sub-our-content .our-header {
@@ -819,7 +849,6 @@ body {
   .brand .brand-inner {
     width: calc(100% / 12 * 9);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -830,7 +859,6 @@ body {
   .maps .maps-inner {
     width: calc(100% / 12 * 11);
     padding: 0 3px;
-    margin: 3px 0;
     box-sizing: border-box;
     margin: 0 auto;
     padding-bottom: 62px;
@@ -899,6 +927,33 @@ body {
   }
   .footer .footer-row-item .info a {
     font-size: 10px;
+  }
+  .footer .organize {
+    font-size: 10px;
+    padding: 0;
+  }
+  .footer .organize .title {
+    max-width: 51px;
+    padding: 0;
+  }
+  .footer .organize .organ {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .footer .organize .organ-2 img {
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .footer .organize .organ-inner .img img {
+    width: 40%;
+  }
+  .footer .organize .certi {
+    margin-left: 0;
+    display: flex;
+  }
+  .footer .organize .certi img {
+    width: 40%;
   }
   .footer .logo {
     text-align: left;
