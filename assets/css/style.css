@@ -475,10 +475,25 @@ body {
   margin: auto;
 }
 .footer .organize {
-  text-align: center;
+  display: flex;
+  font-size: 24px;
+  color: #2e3133;
+  justify-content: center;
+  padding: 40px 0;
 }
 .footer .organize img {
-  width: 100%;
+  padding: 0 10px;
+}
+.footer .organize p {
+  padding: 0 10px;
+}
+.footer .organize .organ {
+  display: flex;
+  align-items: center;
+}
+.footer .organize .certi {
+  display: flex;
+  align-items: center;
 }
 .footer .logo {
   text-align: center;
