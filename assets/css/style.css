@@ -918,13 +918,17 @@ body {
   .footer .recommend {
     text-align: left;
     width: 85%;
-    margin: 0 15px;
+    margin: 0 15px 20px 15px;
   }
   .footer .recommend p {
     font-size: 9px;
   }
   .footer .support-inner {
     display: none;
+  }
+  .footer .foot {
+    height: 12px;
+    background-color: #000;
   }
 }
 /*# sourceMappingURL=style.css.map */
