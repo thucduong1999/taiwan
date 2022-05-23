@@ -17,10 +17,10 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("day").innerHTML = days;
-  document.getElementById("hour").innerHTML = hours;
-  document.getElementById("minute").innerHTML = minutes;
-  document.getElementById("second").innerHTML = seconds;
+  document.getElementById("day").innerHTML = days < 10 ? "0"+days : days;
+  document.getElementById("hour").innerHTML = hours < 10 ? "0"+hours : hours;
+  document.getElementById("minute").innerHTML = minutes < 10 ? "0"+minutes : minutes;
+  document.getElementById("second").innerHTML = seconds < 10 ? "0"+seconds : seconds;
 
   // If the count down is finished, write some text
   if (distance < 0) {

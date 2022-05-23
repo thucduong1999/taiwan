@@ -203,9 +203,14 @@
             </div>
             <div class="container">
                 <div class="brand-inner row">
-                    <div class="thumb">
+                    <div class="thumb web">
                         <div class="thumb-inner">
                             <img src="./assets/img/brand/Brand-list.png" alt="">
+                        </div>
+                    </div>
+                    <div class="thumb mobile">
+                        <div class="thumb-inner">
+                            <img src="./assets/img/brand/Brand-list-mobile.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -218,9 +223,14 @@
             </div>
             <div class="container">
                 <div class="maps-inner row">
-                    <div class="thumb">
+                    <div class="thumb web">
                         <div class="thumb-inner">
                             <img src="./assets/img/maps/Maps.png" alt="">
+                        </div>
+                    </div>
+                    <div class="thumb mobile">
+                        <div class="thumb-inner">
+                            <img src="./assets/img/maps/Maps-mobile.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -388,6 +398,13 @@
             dots: false,
             slidesToShow: 1,
             slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 600,
+                settings: {
+                    infinite: true,
+                    arrows: false
+                }
+            }],
             autoplay: true,
             autoplaySpeed: 3000,
         })

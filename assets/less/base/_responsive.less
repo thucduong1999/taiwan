@@ -1,5 +1,5 @@
 // @media all and (max-width: 1572px) {
-//     #countdown {
+//     .countdown {
 //         .countdown-inner {
 //             .countdown-content {
 //                 top: 25%;
@@ -102,7 +102,8 @@
                 .hero-cover {
                     font-family: "SFU";
                     .col(5);
-                    font-size: calc(100vw/18.7);
+                    // font-size: calc(100vw/18.7);
+                    font-size: 72px;
                 }
             }
             .nav-about {
@@ -244,9 +245,6 @@
                 padding-top: 7px;
             }
         }
-        .footer-container {
-            // max-width: 1074px;
-        }
         .footer-row {
             &-item {
                 width: calc(100%/3);
@@ -353,36 +351,273 @@
 //     }
 // }
 
-// @media all and (max-width: 375px) {
-//     .main-title {
-//         font-size: 24px;
-//         padding: 10px 0 15px 0;
-//     }
-//     #brand {
-//         padding-bottom: 25px;
-//     }
-//     #countdown {
-//         .countdown-inner {
-//             .countdown-content {
-//                 top: 3%;
-//                 .title,
-//                 .subtitle {
-//                     font-size: 16px;
-//                     letter-spacing: 0;
-//                     line-height: 22px;
-//                 }
-//                 .countdown-time {
-//                     .time {
-//                         margin: 0 8px;
-//                     }
-//                     .num {
-//                         font-size: 30px;
-//                     }
-//                     span {
-//                         font-size: 12px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+@media all and (max-width: 375px) {
+    .main-title {
+        font-size: 24px;
+        padding: 10px 0 15px 0;
+    }
+    .brand {
+        padding-bottom: 25px;
+    }
+
+    .header {
+        padding-top: 55px;
+        .logo {
+            img {
+                width: 25%;
+            }
+            .menu {
+                gap: 10px;
+                font-size: 10px;
+                .home {
+                    padding: 0 8px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid transparent;
+                    border-radius: 3px;
+                    &:hover {
+                        color: @color-white;
+                        background-color: @color-hover-header;
+                        border-color: @color-hover-header;
+                    }
+                }
+                .contact {
+                    padding: 0 8px;
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid transparent;
+                    border-radius: 3px;
+                    &:hover {
+                        color: @color-white;
+                        background-color: @color-hover-header;
+                        border-color: @color-hover-header;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        margin-top: 0;
+        .slick-dots {
+            max-width: 70px;
+            bottom: 33%;
+            li {
+                margin: 0 -4px;
+                button:before {
+                    font-size: 5px;
+                }
+            }
+        }
+        .img-background {
+            .slider-inner {
+                .hero-cover {
+                    line-height: 30px;
+                    .col(6.3);
+                    // font-size: calc(100vw/15);
+                    font-size: 25px;
+                }
+            }
+            .nav-about {
+                .col(9);
+                margin: -30px auto 0 auto;
+                .about-header {
+                    font-size: 17px;
+                }
+                .sub-about {
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+    .our-skill {
+        .sub-our {
+            &-content {
+                .col(9);
+                .our-header {
+                    margin: 30px 0;
+                }
+                .our-h2{
+                    font-size: 17px;
+                }
+                .our-h3{
+                    font-size: 17px;
+                }
+                .our-p{
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+        .our-img{
+            margin-top: -5px;
+        }
+    }
+
+    .main-title {
+        font-size: 17px;
+    }
+
+    .product {
+        padding-bottom: 60px;
+        .title {
+            padding: 75px 0 30px 0;
+        }
+    }
+
+    .web {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+    .brand {
+        .title {
+            padding: 25px 0 15px 0;
+        }
+        .brand-inner {
+            .col(9);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        padding-bottom: 12px;
+    }
+
+    .maps {
+        .title {
+            padding: 40px 0 23px 0;
+        }
+        .maps-inner {
+            .col(11);
+            margin: 0 auto;
+            padding-bottom: 62px;
+        }
+    }
+
+    .countdown {
+        .countdown-inner {
+            .countdown-content {
+                top: 17%;
+                .title,
+                .subtitle {
+                    font-size: 20px;
+                    letter-spacing: 0;
+                    line-height: 15px;
+                }
+                .countdown-time {
+                    .time {
+                        margin: 0 8px;
+                    }
+                    .num {
+                        font-size: 30px;
+                    }
+                    span {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+    .link {
+        margin-top: 60px;
+        .youtube {
+            .title {
+                font-size: 17px;
+            }
+            .sub-title {
+                font-size: 10px;
+            }
+            .link-youtube {
+                margin: 25px auto 0 auto;
+                iframe {
+                    height: 165px;
+                }
+            }
+        }
+        .map {
+            margin-top: -35px;
+            .title {
+                font-size: 17px;
+                padding: 90px 0 25px 0;
+            }
+            .link-map {
+                iframe {
+                    height: 160px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .social {
+            .icon {
+                font-size: 10px;
+                line-height: 13px;
+                padding-top: 2px;
+                i {
+                    padding: 0 6px;
+                }
+            }
+        }
+        .footer-container {
+            margin: 0;
+        }
+        .footer-row {
+            &-item {
+                width: 100%;
+                text-align: left;
+                padding: 0;
+                .title {
+                    font-size: 11px;
+                }
+                .info {
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        .logo {
+            text-align: left;
+            img {
+                width: 60%;
+            }
+        }
+        .form {
+            display: none;
+        }
+        .row-item {
+            margin: 0 15px;
+            padding-bottom: 0;
+            a {
+                font-size: 9px;
+                padding: 0;
+                color: @color-countdown;
+                &:hover {
+                    color: @color-hover-header;
+                }
+            }
+        }
+        .recommend {
+            text-align: left;
+            width: 85%;
+            margin: 0 15px;
+            p {
+                font-size: 9px;
+            }
+        }
+
+
+
+
+
+
+
+        .support-inner {
+            display: none;
+        }
+    }
+}
