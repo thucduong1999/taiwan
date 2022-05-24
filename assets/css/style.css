@@ -125,16 +125,16 @@ body {
   top: 18%;
   transform: translate(-43%, -8%);
   color: #fff;
-  font-size: 114px;
+  font-size: calc(100vw/16.9);
 }
 .hero .img-background .nav-about {
   position: absolute;
   width: calc(100% / 12 * 5);
   padding: 0 3px;
   box-sizing: border-box;
-  bottom: -6%;
+  bottom: 18%;
   left: 53%;
-  transform: translate(0%, 6%);
+  transform: translate(0%, 100%);
 }
 .hero .img-background .nav-about .about-header {
   font-size: 42px;
@@ -151,7 +151,7 @@ body {
 }
 .our-skill {
   background-color: #f7f7f9;
-  margin-top: 13%;
+  margin-top: 250px;
 }
 .our-skill .sub-our {
   justify-content: flex-end;
@@ -555,7 +555,7 @@ body {
     width: calc(100% / 12 * 5);
     padding: 0 3px;
     box-sizing: border-box;
-    font-size: 72px;
+    font-size: calc(100vw/18.7);
   }
   .hero .img-background .nav-about {
     position: unset;
@@ -563,6 +563,7 @@ body {
     padding: 0 3px;
     box-sizing: border-box;
     margin: 0 auto;
+    transform: translate(0%, 0%);
   }
   .hero .img-background .nav-about .about-header {
     font-size: 50px;
@@ -575,10 +576,14 @@ body {
     line-height: 40px;
     text-align: justify;
   }
+  .our-skill {
+    margin-top: 165px;
+  }
   .our-skill .sub-our {
     justify-content: center;
   }
   .our-skill .sub-our-content {
+    margin-right: 0;
     width: calc(100% / 12 * 10);
     padding: 0 3px;
     box-sizing: border-box;
@@ -703,9 +708,6 @@ body {
     max-width: 125px;
     width: 100%;
   }
-  .footer .organize .organ {
-    display: block;
-  }
   .footer .organize .certi {
     margin-left: -92px;
   }
@@ -789,7 +791,7 @@ body {
     width: calc(100% / 12 * 6.3);
     padding: 0 3px;
     box-sizing: border-box;
-    font-size: 25px;
+    font-size: calc(100vw/15);
   }
   .hero .img-background .nav-about {
     width: calc(100% / 12 * 9);
@@ -803,6 +805,9 @@ body {
   .hero .img-background .nav-about .sub-about {
     font-size: 10px;
     line-height: 14px;
+  }
+  .our-skill {
+    margin-top: 55px;
   }
   .our-skill .sub-our-content {
     width: calc(100% / 12 * 9);
@@ -939,6 +944,7 @@ body {
   .footer .organize .organ {
     width: 100%;
     padding: 5px 0;
+    display: block;
   }
   .footer .organize .organ-2 img {
     width: 80%;

@@ -102,14 +102,14 @@
                 .hero-cover {
                     font-family: "SFU";
                     .col(5);
-                    // font-size: calc(100vw/18.7);
-                    font-size: 72px;
+                    font-size: calc(100vw/18.7);
                 }
             }
             .nav-about {
                 position: unset;
                 .col(10);
                 margin: 0 auto;
+                transform: translate(0%, 0%);
                 .about-header {
                     font-size: 50px;
                     color: @title-color;
@@ -126,9 +126,11 @@
     }
     
     .our-skill{
+        margin-top: 165px;
         .sub-our {
             justify-content: center;
             &-content{
+                margin-right: 0;
                 .col(10);
                 .our-header {
                     margin: 85px 0;
@@ -272,9 +274,6 @@
             .title {
                 max-width: 125px;
                 width: 100%;
-            }
-            .organ {
-                display: block;
             }
             .certi {
                 margin-left: -92px;
@@ -443,8 +442,7 @@
                 .hero-cover {
                     line-height: 30px;
                     .col(6.3);
-                    // font-size: calc(100vw/15);
-                    font-size: 25px;
+                    font-size: calc(100vw/15);
                 }
             }
             .nav-about {
@@ -462,6 +460,7 @@
     }
 
     .our-skill {
+        margin-top: 55px;
         .sub-our {
             &-content {
                 .col(9);
@@ -620,6 +619,7 @@
             .organ {
                 width: 100%;
                 padding: 5px 0;
+                display: block;
                 &-2 {
                     img {
                         width: 80%;
